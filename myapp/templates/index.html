@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>My Project</title>
+</head>
+<body>
+    <h1>Здарова</h1>
+    <ul>
+        {% for advantage in advantages %}
+            <li>{{ advantage.title }}: {{ advantage.description }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for item in menu_items %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
